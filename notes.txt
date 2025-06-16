@@ -4,3 +4,22 @@
  //tsc --init //these create a configuration folder 
  //late after we need to config our project   through rootDir  and add the  src as the root 
 //later again we need to find outerDir   inside ./build/js     these will create a js directory and its where all the compiled file for ts will be `
+//later added noEmitOnError to true 
+---------------------------------------------------
+1. Itro to typscript 
+1.1
+a.typescript a static language that means  types are checked at compler time 
+-help to catch error during the development  instead in running time 
+-integration of intersence help us to get error and reading them 
+-great for teams 
+
+b.js is dynamic that measn types are checked on run time 
+1.2
+-in typescript you explicit set types where the typscript will not enferre the types it will already now it  because you set it 
+1.3
+types in typescript 
+-numbers 
+-string 
+-boolean
+-union |
+-any   (any types )
