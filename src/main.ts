@@ -25,3 +25,5 @@ let mytuples: [number, string, boolean] = [5, "Alain", true];
 let arrr = [5, "Hirwa", true];
 arrr = mytuples;
 //mytuples = arrr   // typescript will know that it might be possible for  js to be more than   and few than  what the tuples except
+
+// Objects
