@@ -44,3 +44,6 @@ let greet = (guitarist: Guitarist) => {
   return `Hello ${guitarist.name.toLowerCase()}`;
 };
 //Enums
+//unlike other javascript features enums are  not type-level
+//but something that is added to language and runtime as addition
+//it something new forsure
