@@ -27,3 +27,12 @@ let multi: multiplyFunction = (a: number, b: number): number => {
   return a * b;
 };
 console.log(multi(4, 5));
+
+//optional parameters
+const addAll = (a: number, b: number, c?: number): number => {
+  if (typeof c !== "undefined") {
+    return a + b + c;
+  }
+  return a + b;
+};
+//something that could not work default value  won't work when we are working with alias types and interface   method
