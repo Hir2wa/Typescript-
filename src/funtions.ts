@@ -13,3 +13,9 @@ let myName: "Alain";
 myName = "Alain";
 console.log(myName);
 //just here to keep like the constant
+
+//function with return type of void
+const returnName = (name: string): void => {
+  console.log(name);
+};
+returnName("Alain");
