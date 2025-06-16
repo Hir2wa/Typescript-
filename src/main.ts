@@ -47,3 +47,10 @@ let greet = (guitarist: Guitarist) => {
 //unlike other javascript features enums are  not type-level
 //but something that is added to language and runtime as addition
 //it something new forsure
+enum grade {
+  a,
+  d,
+  h,
+}
+console.log(grade.d);
+//they are enumurated
