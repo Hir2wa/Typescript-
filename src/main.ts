@@ -18,3 +18,10 @@ let mixedArray = ["a", 5, true];
 
 let arr = [];
 let brands: string[] = [];
+
+//tupls is an array the  have fixed size and  precious datatypes it must take
+//and you must follow the order
+let mytuples: [number, string, boolean] = [5, "Alain", true];
+let arrr = [5, "Hirwa", true];
+arrr = mytuples;
+//mytuples = arrr   // typescript will know that it might be possible for  js to be more than   and few than  what the tuples except
