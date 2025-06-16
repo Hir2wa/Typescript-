@@ -43,3 +43,4 @@ console.log(myObj);
 let greet = (guitarist: Guitarist) => {
   return `Hello ${guitarist.name.toLowerCase()}`;
 };
+//Enums
