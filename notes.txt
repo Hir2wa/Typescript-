@@ -1,0 +1,3 @@
+ how to install typsript 
+ //npm i typescript -g 
+ //z
