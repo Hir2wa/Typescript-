@@ -3,4 +3,4 @@
  //tsc "name of the file" better add -w to continue watching the  changes 
  //tsc --init //these create a configuration folder 
  //late after we need to config our project   through rootDir  and add the  src as the root 
-//later again we need to find outerDir   inside ./build/js   
+//later again we need to find outerDir   inside ./build/js     these will create a js directory and its where all the compiled file for ts will be `
