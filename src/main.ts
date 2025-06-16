@@ -27,14 +27,19 @@ arrr = mytuples;
 //mytuples = arrr   // typescript will know that it might be possible for  js to be more than   and few than  what the tuples except
 
 // Objects
-type guirarist = {
+//we can also use interfacen  but remove the = only still continue to work
+type Guitarist = {
   name: string;
   age?: number; // here we can make a agen optional for a user  by just putting the ? infront of the age please
   level: number;
 };
 
-let myObj: guirarist = {
+let myObj: Guitarist = {
   name: "Alain",
   level: 4,
 };
 console.log(myObj);
+
+let greet = (guitarist: Guitarist) => {
+  return `Hello ${guitarist.name.toLowerCase()}`;
+};
