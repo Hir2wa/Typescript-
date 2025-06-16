@@ -19,3 +19,11 @@ const returnName = (name: string): void => {
   console.log(name);
 };
 returnName("Alain");
+// type multiplyFunction = (a: number, b: number) => number;
+interface multiplyFunction {
+  (a: number, b: number): number;
+}
+let multi: multiplyFunction = (a: number, b: number): number => {
+  return a * b;
+};
+console.log(multi(4, 5));
