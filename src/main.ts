@@ -11,4 +11,10 @@ const sum = (a: number, b: number) => {
 //Array
 let stringArray = ["a", "b", "c"];
 let guitars = ["stract", "les Paul", 912];
-let mixedDate = ["a", 5, true];
+let mixedArray = ["a", 5, true];
+
+// mixedArray = stringArray
+// stringArray = mixedArray    why these happens
+
+let arr = [];
+let brands: string[] = [];
