@@ -27,3 +27,14 @@ arrr = mytuples;
 //mytuples = arrr   // typescript will know that it might be possible for  js to be more than   and few than  what the tuples except
 
 // Objects
+type guirarist = {
+  name: string;
+  age?: number; // here we can make a agen optional for a user  by just putting the ? infront of the age please
+  level: number;
+};
+
+let myObj: guirarist = {
+  name: "Alain",
+  level: 4,
+};
+console.log(myObj);
