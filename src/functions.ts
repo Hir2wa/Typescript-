@@ -73,3 +73,4 @@ const numberOrString = (value: number | string): string => {
 const isNumber = (value: any): boolean => {
   return typeof value === "number" ? true : false;
 };
+//worked on introduction to type assertion
