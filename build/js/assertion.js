@@ -11,11 +11,9 @@ console.log(r);
 //type alias is like creating you own type  and be reused
 //using the unknown in types casting in double  that where is separate to any type
 const addOrConcat = (a, b, c) => {
-    if (c === "add")
-        return a + b;
-    return "" + a + b;
+  if (c === "add") return a + b;
+  return "" + a + b;
 };
 console.log(addOrConcat(4, 5, "add"));
 let add = addOrConcat(3, 5, "add");
 console.log(add);
-//
