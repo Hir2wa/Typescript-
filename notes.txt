@@ -29,5 +29,15 @@ types in typescript
 type ID = number | string;       // can't do this with interface
 type RGB = [number, number, number];
 type Status = "success" | "error";
-
 here  on unions  and tuples and literal types  here types wins 
+//key take away on typescript 
+------------------------------
+🧱 Both type and interface:
+Help you shape the structure of:
+
+Objects
+Arrays
+Function types
+API responses
+Classes (especially with interface)
+And more!
