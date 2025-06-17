@@ -14,4 +14,13 @@ type two = string | number;
 let p: one = "Alain";
 let r = <number | one>"Alain";
 console.log(r);
-//type allias is like creating you own type  and be reused
+//type alias is like creating you own type  and be reused
+//using the unknown in types casting in double  that where is separate to any type
+const addOrConcat = (
+  a: number,
+  b: number,
+  c: "add" | "concat"
+): number | string => {
+  if (c === "add") return a + b;
+  return "" + a + b;
+};
