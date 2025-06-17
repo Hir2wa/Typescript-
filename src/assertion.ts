@@ -24,3 +24,5 @@ const addOrConcat = (
   if (c === "add") return a + b;
   return "" + a + b;
 };
+
+console.log(addOrConcat(4, 5, "add"));
