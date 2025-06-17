@@ -47,3 +47,16 @@ const total = (num: number, ...nums: number[]) => {
 };
 console.log(total(1, 2, 4, 5, 5, 6));
 //no need to include the starting point it is optional
+
+//the never type
+const createError = (erroMsg: string): never => {
+  throw new Error(erroMsg);
+};
+
+const infinite = (): void => {
+  let i: number = 1;
+  while (true) {
+    i++;
+    // if(i>100) break
+  }
+};
