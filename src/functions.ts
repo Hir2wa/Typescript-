@@ -36,3 +36,10 @@ const addAll = (a: number, b: number, c?: number): number => {
   return a + b;
 };
 //something that could not work default value  won't work when we are working with alias types and interface   method
+
+const total = (...nums: number[]) => {
+  return nums.reduce((prev, current) => {
+    return prev + current;
+  });
+};
+console.log(total(1, 2, 4, 5, 5, 6));
