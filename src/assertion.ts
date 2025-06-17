@@ -26,3 +26,7 @@ const addOrConcat = (
 };
 
 console.log(addOrConcat(4, 5, "add"));
+
+let add: number = addOrConcat(3, 5, "add") as number;
+console.log(add);
+//
