@@ -8,3 +8,10 @@ console.log((<string>sureName).length);
 console.log(typeof sureName);
 //from now these sureNane is a string nolonger unkown
 //in dom we use html convas element as a type casting of it
+
+type one = string;
+type two = string | number;
+let p: one = "Alain";
+let r = <number | one>"Alain";
+console.log(r);
+//type allias is like creating you own type  and be reused
