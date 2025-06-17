@@ -24,3 +24,4 @@ types in typescript
 -union |
 -any   (any types )
 2.Type aliases let you name a type once and reuse it anywhere.
+-type alias help us to union different type to a valiable which don't work on interface 
