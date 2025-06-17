@@ -74,3 +74,13 @@ const isNumber = (value: any): boolean => {
   return typeof value === "number" ? true : false;
 };
 //worked on introduction to type assertion
+
+//types alias
+type Status = "success" | "error" | "loading";
+
+function showStatus(status: Status): void {
+  console.log("Status is:", status);
+}
+
+showStatus("success");
+//showStatus("fail");    // ❌ Error!
