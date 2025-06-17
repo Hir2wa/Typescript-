@@ -60,3 +60,11 @@ const infinite = (): void => {
     // if(i>100) break
   }
 };
+
+const numberOrString = (value: number | string): string => {
+  if (typeof value === "number") return "string";
+  if (typeof value === "string") return "number ";
+  throw new Error("Unreachable ");
+};
+// typscrip needs safty even if you are sure you gone return number or string but needs a safety for  when a error ocurs
+//these never happens on the unreachable code  infinite loops and errros thrown
