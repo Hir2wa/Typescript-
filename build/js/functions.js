@@ -54,4 +54,8 @@ const numberOrString = (value) => {
 const isNumber = (value) => {
     return typeof value === "number" ? true : false;
 };
-//worked on introduction to type assertion
+function showStatus(status) {
+    console.log("Status is:", status);
+}
+showStatus("success");
+//showStatus("fail");    // ❌ Error!
