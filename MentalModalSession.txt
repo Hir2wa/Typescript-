@@ -1,4 +1,4 @@
- 1.How do type guards work? Give examples using typeof, in and user-defined type guard functions.
+ A.How do type guards work? Give examples using typeof, in and user-defined type guard functions.
 ------------------------------------------------------------------------------------------------
 -A type guard is a way to narrow down the type of a variable inside a condition,
  so TypeScript knows exactly what you're working with.
@@ -44,3 +44,5 @@ function makeSound(pet: Dog | Cat) {
 | `typeof`   | `typeof value === "type"` | Use with primitives (`string`, `number`, etc.) |
 | `in`       | `"prop" in object`        | Use to check if a prop exists in an object     |
 | **Custom** | `function x is Y()`       | Write your own logic for complex types         |
+
+B.
