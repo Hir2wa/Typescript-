@@ -78,3 +78,11 @@ type ID = string | number; // ✅ Union type
 type Status = "active" | "inactive"; // ✅ Literal types
 
 type Callback = (a: number, b: number) => number; // ✅ Function type
+
+| Situation                                                | Use `interface` if...                | Use `type` if...                    |
+| -------------------------------------------------------- | ------------------------------------ | ----------------------------------- |
+| You're modeling **objects or classes**                   | ✅ Easier to extend, merge, and scale | 👌 Still works, but less extendable |
+| You need **primitive**, **union**, or **function** types | ❌ Not supported                      | ✅ Type handles it perfectly         |
+| You want to **merge** declarations                       | ✅ Only `interface` can do this       | ❌ `type` will throw an error        |
+| You work in a **class-based or OOP setup**               | ✅ Matches well with `implements`     | 👌 Possible, but less idiomatic     |
+| You want **maximum flexibility**                         | 👌 Good                              | ✅ Best for advanced type combos     |
