@@ -20,3 +20,18 @@ function handlePerson(person: Admin | User) {
 
 3.🧙 3. User-defined Type Guards — your own 🔥 logic
 You can write your own function that returns a special type:
+
+type Dog = { bark(): void };
+type Cat = { meow(): void };
+
+function isDog(animal: Dog | Cat): animal is Dog {
+  return "bark" in animal;
+}
+
+function makeSound(pet: Dog | Cat) {
+  if (isDog(pet)) {
+    pet.bark(); // TS knows it's a Dog ✅
+  } else {
+    pet.meow(); // TS knows it's a Cat ✅
+  }
+}
