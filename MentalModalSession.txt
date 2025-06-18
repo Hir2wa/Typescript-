@@ -17,3 +17,6 @@ function handlePerson(person: Admin | User) {
     console.log("User Cart:", person.cart);
   }
 }
+
+3.🧙 3. User-defined Type Guards — your own 🔥 logic
+You can write your own function that returns a special type:
