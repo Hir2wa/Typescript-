@@ -6,3 +6,8 @@ export function plural(n: number): boolean {
     return true;
   }
 }
+// Create a TypeScript function that:
+// Accepts a name (string) and an optional age (number).
+// Returns a greeting message like:
+// "Hello Alain!"
+// "Hello Alain, you are 22 years old!" (if age is provided)
