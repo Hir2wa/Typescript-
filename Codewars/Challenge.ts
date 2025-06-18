@@ -20,3 +20,8 @@ function greet(name: string, age?: number): string {
 
 console.log(greet("Alain"));
 console.log(greet("Alain", 22));
+//what learned
+// You get used to writing types: string, number, ? for optional
+// You learn about function return types
+// You practice writing clear logic
+// It's readable, and you can build on it (like adding job titles, hobbies, etc.)
