@@ -1,0 +1,2 @@
+How do type guards work? Give examples using typeof, in and user-defined type guard functions.
+-
