@@ -17,3 +17,6 @@ function greet(name: string, age?: number): string {
   }
   return `Hello ${name}!`;
 }
+
+console.log(greet("Alain"));
+console.log(greet("Alain", 22));
