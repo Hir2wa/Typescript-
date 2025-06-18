@@ -3,3 +3,17 @@
 -A type guard is a way to narrow down the type of a variable inside a condition,
  so TypeScript knows exactly what you're working with.
 Think of it as: “Hey TypeScript, I just proved what this thing really is — now let me use it properly.”
+
+-2. Using in — for object properties
+Use this when you have different objects that share some props and differ in others.
+
+type Admin = { role: "admin"; dashboard: string };
+type User = { role: "user"; cart: string[] };
+
+function handlePerson(person: Admin | User) {
+  if ("dashboard" in person) {
+    console.log("Welcome Admin:", person.dashboard);
+  } else {
+    console.log("User Cart:", person.cart);
+  }
+}
