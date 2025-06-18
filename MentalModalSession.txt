@@ -74,3 +74,7 @@ interface Book {
 
 *4. Functions, Primitives, and Unions – Only type can do this!
 
+type ID = string | number; // ✅ Union type
+type Status = "active" | "inactive"; // ✅ Literal types
+
+type Callback = (a: number, b: number) => number; // ✅ Function type
