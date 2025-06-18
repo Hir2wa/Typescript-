@@ -41,3 +41,9 @@ Function types
 API responses
 Classes (especially with interface)
 And more!
+
+
+- we have 2 types of assertion 
+a.not null or underfined 
+b.typscrip doesn't know type but you know more about the type 
+c.making properties of object readonly making them constants  and become type of those propety names also 
