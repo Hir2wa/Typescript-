@@ -54,3 +54,23 @@ What’s the difference between interface and type aliases? When would you choos
 - Both interface and type are used to describe the shape of data (aka: objects, functions, etc.)
  But they got some differences — let’s unpack them like this:
 -interface uses extend while types uses intersection 
+
+*Declaration Merging – Only interfaces can do this!  
+interface Book {
+  title: string;
+}
+
+interface Book {
+  author: string;
+}
+
+// ✅ This merges into:
+interface Book {
+  title: string;
+  author: string;
+}
+..only interface can do these 
+
+
+*4. Functions, Primitives, and Unions – Only type can do this!
+
