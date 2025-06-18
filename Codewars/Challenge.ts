@@ -11,3 +11,9 @@ export function plural(n: number): boolean {
 // Returns a greeting message like:
 // "Hello Alain!"
 // "Hello Alain, you are 22 years old!" (if age is provided)
+function greet(name: string, age?: number): string {
+  if (age !== undefined) {
+    return `Hello ${name}, you are ${age} years old!`;
+  }
+  return `Hello ${name}!`;
+}
