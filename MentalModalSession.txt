@@ -35,3 +35,12 @@ function makeSound(pet: Dog | Cat) {
     pet.meow(); // TS knows it's a Cat ✅
   }
 }
+
+
+
+
+| Guard Type | Syntax/Keyword            | Use Case                                       |
+| ---------- | ------------------------- | ---------------------------------------------- |
+| `typeof`   | `typeof value === "type"` | Use with primitives (`string`, `number`, etc.) |
+| `in`       | `"prop" in object`        | Use to check if a prop exists in an object     |
+| **Custom** | `function x is Y()`       | Write your own logic for complex types         |
