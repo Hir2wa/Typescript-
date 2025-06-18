@@ -30,3 +30,8 @@ console.log(addOrConcat(4, 5, "add"));
 let add: number = addOrConcat(3, 5, "add") as number;
 console.log(add);
 //
+
+//DOM
+const img = document.querySelector("img") as HTMLImageElement;
+const myImg = document.getElementById("#img") as HTMLImageElement;
+img.src;
