@@ -45,4 +45,5 @@ function makeSound(pet: Dog | Cat) {
 | `in`       | `"prop" in object`        | Use to check if a prop exists in an object     |
 | **Custom** | `function x is Y()`       | Write your own logic for complex types         |
 
-B.
+B.What are conditional types (e.g. T extends U ? X : Y)? Provide a real-world use case.
+//used inside generics
