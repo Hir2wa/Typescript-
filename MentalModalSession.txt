@@ -47,3 +47,9 @@ function makeSound(pet: Dog | Cat) {
 
 B.What are conditional types (e.g. T extends U ? X : Y)? Provide a real-world use case.
 //used inside generics
+
+
+C.
+What’s the difference between interface and type aliases? When would you choose one over the other?
+- Both interface and type are used to describe the shape of data (aka: objects, functions, etc.)
+ But they got some differences — let’s unpack them like this:
