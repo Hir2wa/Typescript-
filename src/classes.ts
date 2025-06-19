@@ -70,3 +70,6 @@ console.log(Alain);
 console.log(Hirwa);
 console.log(Fabrice);
 console.log(Pepps.count);
+
+//working on incapsulation
+class Band {}
