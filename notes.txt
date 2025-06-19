@@ -47,3 +47,9 @@ And more!
 a.not null or underfined 
 b.typscrip doesn't know type but you know more about the type 
 c.making properties of object readonly making them constants  and become type of those propety names also 
+
+
+readonly  works on interface classes and types to loop on properties 
+these prevents the reassignment of the value either on classes ,interface or types
+while the as const   lock the the entire properties of the array object
+here all object  are narrowed literal to exact value 
