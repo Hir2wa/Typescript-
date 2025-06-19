@@ -48,3 +48,17 @@ const page = new Artist("Alain", "Guitar");
 
 console.log(page.play("distartb"));
 ///////////////////////////////////////////////////////
+class Pepps {
+  static count: number = 0;
+  static getCount(): number {
+    return Pepps.count;
+  }
+
+  id: number;
+  constructor(public name: string) {
+    this.id = ++Pepps.count;
+    this.name = name;
+  }
+}
+
+//we will be getting the id + 1 when first member of class is istiated
