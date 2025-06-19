@@ -2,6 +2,7 @@
 //visibility modifier
 //protected means  propety can be accessed inside the deriverid class
 //private inside that class only
+//readonly id for can be read but after init it can't be changed
 
 class Coder {
   constructor(
@@ -22,4 +23,4 @@ class Coder {
 
 let Dave = new Coder("Dave", "Local", 22);
 
-console.log(Dave.getAge);
+console.log(Dave.getAge());
