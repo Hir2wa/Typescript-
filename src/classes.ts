@@ -80,11 +80,16 @@ class Band {
 
   public set data(value: string[]) {
     if (Array.isArray(value) && value.every((el) => typeof el === "string")) {
-      this.data = value;
+      this.dataState = value;
       return;
     } else throw new Error("Parameter is not Array of string ");
   }
-  public get data(): string {
-    return this.data;
+  public get data(): string[] {
+    return this.dataState;
   }
 }
+
+let BandsData = new Band();
+BandsData.data = ["Alain", "Fabrice", "Hirwa"];
+
+console.log(BandsData.data);
