@@ -50,6 +50,7 @@ interface Student {
 const student: Student = {
   name: "Alain",
   gpa: 56,
+  class: 3000,
 };
 
 //console.log(student.area);
