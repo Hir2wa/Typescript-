@@ -13,7 +13,7 @@
 //   job: number;
 // }
 interface obj {
-  [index: string]: number;
+  readonly [index: string]: number;
 }
 
 const transaction: obj = {
@@ -37,3 +37,5 @@ let index = (transactions: obj): number => {
 };
 
 console.log(index(transaction));
+//transaction.pizza = 90
+//here the transaction only permits reading
