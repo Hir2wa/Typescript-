@@ -6,3 +6,22 @@ export function plural(n: number): boolean {
     return true;
   }
 }
+// Create a TypeScript function that:
+// Accepts a name (string) and an optional age (number).
+// Returns a greeting message like:
+// "Hello Alain!"
+// "Hello Alain, you are 22 years old!" (if age is provided)
+function greet(name: string, age?: number): string {
+  if (age !== undefined) {
+    return `Hello ${name}, you are ${age} years old!`;
+  }
+  return `Hello ${name}!`;
+}
+
+console.log(greet("Alain"));
+console.log(greet("Alain", 22));
+//what learned
+// You get used to writing types: string, number, ? for optional
+// You learn about function return types
+// You practice writing clear logic
+// It's readable, and you can build on it (like adding job titles, hobbies, etc.)

@@ -1,0 +1,88 @@
+ A.How do type guards work? Give examples using typeof, in and user-defined type guard functions.
+------------------------------------------------------------------------------------------------
+-A type guard is a way to narrow down the type of a variable inside a condition,
+ so TypeScript knows exactly what you're working with.
+Think of it as: “Hey TypeScript, I just proved what this thing really is — now let me use it properly.”
+
+-2. Using in — for object properties
+Use this when you have different objects that share some props and differ in others.
+
+type Admin = { role: "admin"; dashboard: string };
+type User = { role: "user"; cart: string[] };
+
+function handlePerson(person: Admin | User) {
+  if ("dashboard" in person) {
+    console.log("Welcome Admin:", person.dashboard);
+  } else {
+    console.log("User Cart:", person.cart);
+  }
+}
+
+3.🧙 3. User-defined Type Guards — your own 🔥 logic
+You can write your own function that returns a special type:
+
+type Dog = { bark(): void };
+type Cat = { meow(): void };
+
+function isDog(animal: Dog | Cat): animal is Dog {
+  return "bark" in animal;
+}
+
+function makeSound(pet: Dog | Cat) {
+  if (isDog(pet)) {
+    pet.bark(); // TS knows it's a Dog ✅
+  } else {
+    pet.meow(); // TS knows it's a Cat ✅
+  }
+}
+
+
+
+
+| Guard Type | Syntax/Keyword            | Use Case                                       |
+| ---------- | ------------------------- | ---------------------------------------------- |
+| `typeof`   | `typeof value === "type"` | Use with primitives (`string`, `number`, etc.) |
+| `in`       | `"prop" in object`        | Use to check if a prop exists in an object     |
+| **Custom** | `function x is Y()`       | Write your own logic for complex types         |
+
+B.What are conditional types (e.g. T extends U ? X : Y)? Provide a real-world use case.
+//used inside generics
+
+
+C.
+What’s the difference between interface and type aliases? When would you choose one over the other?
+- Both interface and type are used to describe the shape of data (aka: objects, functions, etc.)
+ But they got some differences — let’s unpack them like this:
+-interface uses extend while types uses intersection 
+
+*Declaration Merging – Only interfaces can do this!  
+interface Book {
+  title: string;
+}
+
+interface Book {
+  author: string;
+}
+
+// ✅ This merges into:
+interface Book {
+  title: string;
+  author: string;
+}
+..only interface can do these 
+
+
+*4. Functions, Primitives, and Unions – Only type can do this!
+
+type ID = string | number; // ✅ Union type
+type Status = "active" | "inactive"; // ✅ Literal types
+
+type Callback = (a: number, b: number) => number; // ✅ Function type
+
+| Situation                                                | Use `interface` if...                | Use `type` if...                    |
+| -------------------------------------------------------- | ------------------------------------ | ----------------------------------- |
+| You're modeling **objects or classes**                   | ✅ Easier to extend, merge, and scale | 👌 Still works, but less extendable |
+| You need **primitive**, **union**, or **function** types | ❌ Not supported                      | ✅ Type handles it perfectly         |
+| You want to **merge** declarations                       | ✅ Only `interface` can do this       | ❌ `type` will throw an error        |
+| You work in a **class-based or OOP setup**               | ✅ Matches well with `implements`     | 👌 Possible, but less idiomatic     |
+| You want **maximum flexibility**                         | 👌 Good                              | ✅ Best for advanced type combos     |
