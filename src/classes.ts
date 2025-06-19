@@ -62,3 +62,10 @@ class Pepps {
 }
 
 //we will be getting the id + 1 when first member of class is istiated
+const Alain = new Pepps("Alain");
+const Hirwa = new Pepps("Hirwa");
+const Fabrice = new Pepps("Fabrice");
+
+console.log(Alain);
+console.log(Hirwa);
+console.log(Fabrice);
