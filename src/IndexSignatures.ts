@@ -7,10 +7,13 @@
 //typescript asks for index  signature when you try to access the property of
 // object when trying to access the values of object
 
+// interface obj {
+//   pizza: number;
+//   book: number;
+//   job: number;
+// }
 interface obj {
-  pizza: number;
-  book: number;
-  job: number;
+  [index: string]: number;
 }
 
 const transaction: obj = {
@@ -18,3 +21,19 @@ const transaction: obj = {
   book: 50,
   job: 60,
 };
+
+const obje1 = "pizza";
+//accesssing dynmaical tutorial am seiing they are saying it doesn't work actually
+//error saying endex signature  or the tutorial am watching i outdated
+console.log(transaction[obje1]);
+console.log(transaction.job);
+
+let index = (transactions: obj): number => {
+  let index: number = 0;
+  for (const key in transaction) {
+    index += transactions[key];
+  }
+  return index;
+};
+
+console.log(index(transaction));
