@@ -41,7 +41,7 @@ console.log(index(transaction));
 //here the transaction only permits reading
 
 interface Student {
-  [index: string]: string | number | undefined;
+  //[index: string]: string | number | undefined;
   name: string;
   gpa: number;
   class?: number;
@@ -52,4 +52,11 @@ const student: Student = {
   gpa: 56,
 };
 
-console.log(student.area);
+//console.log(student.area);
+//one of the way we canm use in type of assection
+for (const key in student) {
+  console.log(`${key} = ${student[key as keyof Student]}`);
+}
+
+//these keyaskey  student create a union type of  the  types we have in that obj
+//  so stat i won't raise an error in time wee are iterating
