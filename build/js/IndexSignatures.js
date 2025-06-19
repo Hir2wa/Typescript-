@@ -39,3 +39,15 @@ const access = (student, key) => {
     console.log(`${key}  : ${student[key]}`);
 };
 console.log(access(student, "class"));
+//why these record for please
+const work = {
+    income: 45,
+    bonus: 57,
+    sidehustles: 68,
+};
+//what if we neeed to  loop then
+for (const key in work) {
+    console.log(`${key} : ${work[key]}`);
+}
+//we use these keyof to a structure we have just defined or utility
+//which i find is the easy one
