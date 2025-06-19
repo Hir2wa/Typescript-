@@ -62,3 +62,8 @@ for (const key in student) {
 //these keyaskey  student create a union type of  the  types we have in that obj
 //  so stat i won't raise an error in time wee are iterating
 //here we were referencing  the   interface
+
+const access = (student: Student, key: keyof Student): void => {
+  console.log(`${key}  : ${student[key]}`);
+};
+console.log(access(student, "class"));
