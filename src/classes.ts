@@ -72,4 +72,16 @@ console.log(Fabrice);
 console.log(Pepps.count);
 
 //working on incapsulation
-class Band {}
+class Band {
+  private dataState: string[];
+  constructor() {
+    this.dataState = [];
+  }
+
+  public set data(value: string[]) {
+    if (Array.isArray(value) && value.every((el) => typeof el === "string")) {
+      this.data = value;
+      return;
+    } else throw new Error("Parameter is not Array of string ");
+  }
+}
