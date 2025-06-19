@@ -39,3 +39,17 @@ let index = (transactions: obj): number => {
 console.log(index(transaction));
 //transaction.pizza = 90
 //here the transaction only permits reading
+
+interface Student {
+  [index: string]: string | number | undefined;
+  name: string;
+  gpa: number;
+  class?: number;
+}
+
+const student: Student = {
+  name: "Alain",
+  gpa: 56,
+};
+
+console.log(student.area);
