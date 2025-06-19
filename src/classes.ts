@@ -47,3 +47,4 @@ class Artist implements Musician {
 const page = new Artist("Alain", "Guitar");
 
 console.log(page.play("distartb"));
+///////////////////////////////////////////////////////
