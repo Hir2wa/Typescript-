@@ -24,3 +24,22 @@ class Coder {
 let Dave = new Coder("Dave", "Local", 22);
 
 console.log(Dave.getAge());
+
+/////////////////////////////////////////////////////////////////
+interface Musician {
+  name: string;
+  instrument: string;
+  play(action: string): string;
+}
+
+class Artist implements Musician {
+  name: string;
+  instrument: string;
+  play(action: string): string {
+    return ` Hello ${this.name}`;
+  }
+  constructor(name: string, instrument: string) {
+    this.name = name;
+    this.instrument = instrument;
+  }
+}
