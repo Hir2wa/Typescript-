@@ -84,4 +84,7 @@ class Band {
       return;
     } else throw new Error("Parameter is not Array of string ");
   }
+  public get data(): string {
+    return this.data;
+  }
 }
