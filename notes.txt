@@ -62,3 +62,9 @@ here all object  are narrowed literal to exact value
 | `Pick<T, K>`   | Picks specific keys from type T                      |
 | `Omit<T, K>`   | Opposite of Pick — removes keys                      |
 | `Readonly<T>`  | Makes all props read-only                            |
+
+
+✅ Yes — most utility types in TypeScript are designed to work on object
+ types (a.k.a. type shapes, interfaces, or object literals).
+
+📦 Think of utility types like power tools for shaping and modifying object types.
