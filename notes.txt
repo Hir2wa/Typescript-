@@ -66,5 +66,12 @@ here all object  are narrowed literal to exact value
 
 ✅ Yes — most utility types in TypeScript are designed to work on object
  types (a.k.a. type shapes, interfaces, or object literals).
-
 📦 Think of utility types like power tools for shaping and modifying object types.
+
+So YES — You're 100% right:
+Utility types are mostly for shaping object types
+
+They help you restructure, pick, exclude, or transform types
+
+They make your code cleaner, safer, and more scalable
+
