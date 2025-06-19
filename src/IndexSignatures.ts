@@ -67,3 +67,12 @@ const access = (student: Student, key: keyof Student): void => {
   console.log(`${key}  : ${student[key]}`);
 };
 console.log(access(student, "class"));
+
+// interface income {
+//   [index: string]: number;
+// }
+//the  index must be a type of number  but can't be a type of literal strings
+
+type streams = "income" | "bonus " | "sidehustles";
+type income = Record<streams, string | number>;
+//why these record for please
