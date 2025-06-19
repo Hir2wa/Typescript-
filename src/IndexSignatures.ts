@@ -73,6 +73,19 @@ console.log(access(student, "class"));
 // }
 //the  index must be a type of number  but can't be a type of literal strings
 
-type streams = "income" | "bonus " | "sidehustles";
-type income = Record<streams, string | number>;
+type streams = "income" | "bonus" | "sidehustles";
+type Income = Record<streams, string | number>;
 //why these record for please
+
+const work: Income = {
+  income: 45,
+  bonus: 57,
+  sidehustles: 68,
+};
+
+//what if we neeed to  loop then
+for (const key in work) {
+  console.log(`${key} : ${work[key as keyof Income]}`);
+}
+//we use these keyof to a structure we have just defined or utility
+//which i find is the easy one
