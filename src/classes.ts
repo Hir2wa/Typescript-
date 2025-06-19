@@ -36,10 +36,14 @@ class Artist implements Musician {
   name: string;
   instrument: string;
   play(action: string): string {
-    return ` Hello ${this.name}`;
+    return ` ${this.name}  plays ${this.instrument} `;
   }
   constructor(name: string, instrument: string) {
     this.name = name;
     this.instrument = instrument;
   }
 }
+
+const page = new Artist("Alain", "Guitar");
+
+console.log(page.play("distartb"));
