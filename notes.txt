@@ -53,3 +53,12 @@ readonly  works on interface classes and types to loop on properties
 these prevents the reassignment of the value either on classes ,interface or types
 while the as const   lock the the entire properties of the array object
 here all object  are narrowed literal to exact value 
+
+
+| Utility        | What it does                                         |
+| -------------- | ---------------------------------------------------- |
+| `Record<K, T>` | Makes an object with keys `K` and values of type `T` |
+| `Partial<T>`   | Makes all properties in T optional                   |
+| `Pick<T, K>`   | Picks specific keys from type T                      |
+| `Omit<T, K>`   | Opposite of Pick — removes keys                      |
+| `Readonly<T>`  | Makes all props read-only                            |
