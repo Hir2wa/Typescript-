@@ -75,3 +75,4 @@ They help you restructure, pick, exclude, or transform types
 
 They make your code cleaner, safer, and more scalable
 
+//Starting generics 
