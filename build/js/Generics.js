@@ -1,2 +1,6 @@
 "use strict";
-//starting  with  Generics in typscript  in typsript
+let test = (args) => {
+    return typeof args === "object" && !Array.isArray(args) && args !== null;
+};
+console.log(test(1));
+console.log(test({ name: "" }));
