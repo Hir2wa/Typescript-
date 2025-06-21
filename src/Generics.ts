@@ -1,6 +1,7 @@
 //starting  with  Generics in typscript  in typsript
-const gen = (args: string): string => args;
-const test = (name: gen) => {
-  return name;
+type gen = (args: string) => string;
+let test = <T>(args: T): boolean => {
+  return typeof args === "object" && !Array.isArray(args) && args !== null;
 };
-test("Alain");
+
+console.log(test(1));
