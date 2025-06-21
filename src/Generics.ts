@@ -5,3 +5,4 @@ let test = <T>(args: T): boolean => {
 };
 
 console.log(test(1));
+console.log(test({ name: "" }));
