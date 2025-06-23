@@ -12,3 +12,5 @@ const gen = <T>(args: T): boolean => {
   return typeof args === "object" && !Array.isArray(args) && args !== null;
 };
 console.log(gen("hello world"));
+// typescript its goal is to generate strict types general developer type experience
+// the sometime doesn't work in Generic where we have option to work on the different types
