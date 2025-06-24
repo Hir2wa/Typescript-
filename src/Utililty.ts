@@ -32,4 +32,4 @@ const permissions: RolePermissions = {
   editor: ["read", "write"],
   viewer: ["read"],
 };
-///
+/// Step 3: Use the types in action
