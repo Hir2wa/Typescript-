@@ -8,6 +8,8 @@ interface UserProfile {
   age?: number; // optional
 }
 
+//Step 2: Use Utility Types to manipulate the object type
+
 // Make all properties optional (like a partial update)
 type UserProfileUpdate = Partial<UserProfile>;
 
@@ -30,3 +32,4 @@ const permissions: RolePermissions = {
   editor: ["read", "write"],
   viewer: ["read"],
 };
+///
