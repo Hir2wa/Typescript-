@@ -33,3 +33,34 @@ const permissions: RolePermissions = {
   viewer: ["read"],
 };
 /// Step 3: Use the types in action
+// Original user object
+const user: UserProfile = {
+  id: 101,
+  name: "Alain",
+  email: "alain@example.com",
+  isAdmin: false,
+  age: 25,
+};
+
+// Using Partial for update
+const updateUser: UserProfileUpdate = {
+  email: "newemail@example.com",
+};
+
+// Using Readonly to prevent modification
+const readonlyUser: ReadonlyUserProfile = user;
+// readonlyUser.name = "New Name"; // Error: Cannot assign to 'name' because it is a read-only property
+
+// Using Pick for public profile
+const publicProfile: PublicUserProfile = {
+  id: user.id,
+  name: user.name,
+};
+
+// Using Omit to hide email
+const safeUser: UserWithoutEmail = {
+  id: user.id,
+  name: user.name,
+  isAdmin: user.isAdmin,
+  age: user.age,
+};
