@@ -14,3 +14,6 @@ console.log(gen("hello world"));
 // typescript its goal is to generate strict types general developer type experience
 // the sometime doesn't work in Generic where we have option to work on the different types
 // checking on the object
+// const isobj = <T>(args: T): { args: T; is: boolean } => {
+//   return typeof args === "object" && Object.keys(args as typeof T).length;
+// };
