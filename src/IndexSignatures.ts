@@ -131,3 +131,10 @@ function processValue(value: string | number | boolean | null | undefined) {
   }
 }
 processValue(6);
+
+//  Why Use Decorators?
+// Logging (like @LogCall)
+// Validation (e.g. @Required)
+// Access control (e.g. @AdminOnly)
+// Dependency Injection
+// Auto-binding (this context fix)
