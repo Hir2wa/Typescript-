@@ -89,3 +89,20 @@ for (const key in work) {
 }
 //we use these keyof to a structure we have just defined or utility
 //which i find is the easy one
+
+class Counter {
+  static count = 0;
+
+  increment() {
+    Counter.count++;
+  }
+
+  static getCount() {
+    return this.count;
+  }
+}
+
+let count1 = new Counter();
+console.log(count1.increment());
+
+console.log(Counter.getCount());
