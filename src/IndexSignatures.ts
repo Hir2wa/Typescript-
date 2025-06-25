@@ -138,3 +138,5 @@ processValue(6);
 // Access control (e.g. @AdminOnly)
 // Dependency Injection
 // Auto-binding (this context fix)
+//LogCall  on method created inside a class
+// Log    appera when the  class is created
