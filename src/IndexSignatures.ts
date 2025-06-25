@@ -106,3 +106,28 @@ let count1 = new Counter();
 console.log(count1.increment());
 
 console.log(Counter.getCount());
+//Write a generic function identity that returns
+// the value it receives without changing the type.
+const ger = <T>(args: T): T => args;
+
+// Write a TypeScript function processValue that takes string
+//  | number | boolean | null | undefined, uses type guards to log
+// uppercase strings, numbers fixed to two decimals, and boolean as
+//  "True"/"False,” and throws an error for null
+// or undefined, including a type assertion to narrow the type.
+
+function processValue(value: string | number | boolean | null | undefined) {
+  if (typeof value == null || typeof value == undefined) {
+    throw new Error("Hey there is an issue");
+  }
+  if (typeof value == "string") {
+    console.log(value.toUpperCase());
+  }
+  if (typeof value == "number") {
+    console.log(value.toFixed(2));
+  }
+  if (typeof value == "boolean") {
+    console.log(value ? true : false);
+  }
+}
+processValue(6);
