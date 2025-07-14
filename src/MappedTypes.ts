@@ -11,3 +11,4 @@ const test: Optional<User> = {
   student_id: 26587,
 };
 console.log(typeof test);
+console.log(9);

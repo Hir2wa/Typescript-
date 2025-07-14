@@ -25,3 +25,18 @@ console.log(greet("Alain", 22));
 // You learn about function return types
 // You practice writing clear logic
 // It's readable, and you can build on it (like adding job titles, hobbies, etc.)
+
+export function orderedCount(text: string): [string, number][] {
+  const result: [string, number][] = [];
+  const seen = new Set<string>();
+
+  for (const char of text) {
+    if (!seen.has(char)) {
+      const count = [...text].filter((c) => c === char).length;
+      result.push([char, count]);
+      seen.add(char);
+    }
+  }
+
+  return result;
+}

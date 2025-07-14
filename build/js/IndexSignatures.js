@@ -61,7 +61,7 @@ class Counter {
 }
 Counter.count = 0;
 let count1 = new Counter();
-console.log(count1.increment());
+count1.increment();
 console.log(Counter.getCount());
 //Write a generic function identity that returns
 // the value it receives without changing the type.
@@ -76,16 +76,16 @@ function processValue(value) {
         throw new Error("Hey there is an issue");
     }
     if (typeof value == "string") {
-        console.log(value.toUpperCase());
+        return value.toUpperCase();
     }
     if (typeof value == "number") {
-        console.log(value.toFixed(2));
+        return value.toFixed(2);
     }
     if (typeof value == "boolean") {
-        console.log(value ? true : false);
+        return value ? true : false;
     }
 }
-processValue(6);
+console.log(processValue(false));
 //  Why Use Decorators?
 // Logging (like @LogCall)
 // Validation (e.g. @Required)
