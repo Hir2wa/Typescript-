@@ -40,3 +40,4 @@ export function orderedCount(text: string): [string, number][] {
 
   return result;
 }
+console.log(orderedCount("AbaaaaA"));
